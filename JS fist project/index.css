@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 450px;
+    width: 80%;
+    margin: 50px auto auto auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1F2937;
+    font-family: "Verdana";
+    color: aliceblue;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 12px 12px 20px 5px rgba(0, 0, 0, 0.42);
+    padding: 0px 20px 0px 20px;
+}
+.homeNumb,.guestNumb {
+    width: 150px;
+    height: 46%;
+    margin: auto;
+    background: black;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    text-align: center;
+    color: #F43F5E;
+    
+
+}
+
+.resetNum {
+    height: 60px;
+    margin: auto;
+    padding: 0px 5px 0px 5px;
+    background: #F43F5E;
+    color: white;
+    border-width: 0px;
+    font-size: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    transition: all 0.2s ease;  
+    
+
+}
+
+.resetNum:hover {    
+    transform: scale(1.1);  
+    cursor: pointer;   
+}
+       
+.addNumbers {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border-color: #E5E7EB; 
+    transition-duration: 0.1s;
+
+
+}
+
+.addNumb{
+    color: white;
+    background: transparent;
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: white;
+    font-size: 18px;
+    font-family: Cursed Timer ULiL, sans-serif;
+    transition: all 0.2s ease;  
+}
+
+.addNumb:hover {
+    transform: scale(1.1); 
+    cursor: pointer;        
+}
+
+@media (max-width: 450px) {
+    .container{
+        display: flex;
+        flex-direction: column
+        
+    }
+    .addNumbers{
+        width: 150px;
+        display: flex;
+        
+    }
+}
