@@ -3,4 +3,43 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 
 
+let randomSymbol1 = " "   
+let randomSymbol2 = " "   
 
+let randomPasswordWindow1 = document.getElementById("randomPasswordWindow1")
+let randomPasswordWindow2 = document.getElementById("randomPasswordWindow2") 
+
+
+function generatePasswordsButton() {
+    for(i=0; i < 8; i++) {
+     
+    let randomPasswordNumber1 = Math.floor(Math.random()* characters.length )
+     randomSymbol1 += characters[randomPasswordNumber1]
+        
+    }
+    randomPasswordWindow1.textContent = randomSymbol1
+    randomSymbol1 = " "
+    
+    
+    for(i=0; i < 8; i++) {
+     
+        let randomPasswordNumber2 = Math.floor(Math.random()* characters.length )
+         randomSymbol2 += characters[randomPasswordNumber2]
+            
+        }
+        randomPasswordWindow2.textContent = randomSymbol2
+        randomSymbol2 = " "
+        
+    }
+
+
+// function generatePassword() {
+//     var length = 20,
+//         charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+//         retVal = "";
+//     for (var i = 0, n = charset.length; i < length; ++i) {
+//         retVal += charset.charAt(Math.floor(Math.random() * n));
+//     }
+//     return retVal;
+// }
+// randomPasswordWindow1.textContent = generatePassword()
